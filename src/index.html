@@ -9,26 +9,43 @@
 </head>
 <body>
 
-    <header>
-        <nav>
-            <div class="brand">BUGATTI</div>
-            <div class="menu">МЕНЮ</div>
-            <div class="menu-content">
-                <ul>
-                    <li><a href="#news">Новини</a></li>
-                    <li><a href="#la-maison">La Maison</a></li>
-                    <li><a href="#sur-mesure">Sur Mesure</a></li>
-                </ul>
-            </div>
+    <header class="sticky-header">
+        <nav class="nav-container">
+          <div class="brand">BUGATTI</div>
+                <a href="#menu">
+                    <img width="45px" height="45px" src="img/burger.png" alt="Burger-menu">
+                </a>
+            
         </nav>
-    </header>
-    
-
-    <section class="hero">
-        <div class="hero-image">
-            <h1>Це для вічності</h1>
+        <div class="menu" id="menu">
+            <div class="menu__top">
+              <h1 style="color: black;">BUGATTI</h1>
+                <a href="#Home">
+                    <img src="img/Icon-Close.png" alt="Close-menu">
+                </a>
+            </div>
+            <nav class="nav">
+                <a href="#Home" class="nav__link">Home</a>
+                <a href="about.html" class="nav__link">History</a>
+               
+            </nav>
         </div>
-    </section>
+      </header>
+
+    <div class="video-background">
+        <video autoplay loop muted playsinline>
+          <source src="https://bugatti.imgix.video/677e5469dfc8a22d8949671b/tourbillon-hero-2025-landing-long-landscape.mp4?fm=mp4&res=high" type="video/mp4" />
+        </video>
+        <div class="content">
+            <section class="hero">
+                <div class="hero-image">
+                    <h1>Це для вічності</h1>
+                </div>
+            </section>
+        </div>
+      </div>
+      
+    
 
     <section class="news">
         <h2>Наші останні новини</h2>
@@ -44,47 +61,81 @@
         <h2>La Maison Bugatti</h2>
         <p>З 1909 року співробітники BUGATTI Automobiles створюють незрівнянні продукти та враження, розсуваючи межі естетики та динаміки.</p>
         <div class="gallery">
-            <img   src="img/fone w1.jpg">
-            <img src="img2.jpg" alt="Стара машина">
-            <img src="img3.jpg" alt="Механік">
+            <img src="img/fone w1.jpg">
+            <img src="img/fone w5.jpg" alt="Стара машина">
+            <img src="img/fone w4.jpg" alt="Механік">
         </div>
     </section>
 
-    <section class="cars">
-        <h2>Наші гіперспортивні автомобілі</h2>
-        <div class="car-grid">
-            <div>Tourbillon</div>
-            <div>Mistral</div>
-            <div>Bolide</div>
-            <div>Chiron</div>
-            <div>Divo</div>
-            <div>Centodieci</div>
-        </div>
-    </section>
+    
 
     <section class="sur-mesure">
         <h2>BUGATTI Sur Mesure</h2>
         <p>Вершина автомобільної інженерії та надрозкішного стилю життя.</p>
-        <div class="badge-image"></div>
+        <div class="badge-image">
+            <div class="badge-text">
+                <p><strong class="highlight">Спадщина, майстерність та інновації</strong><br>
+                У BUGATTI ми втілюємо бачення наших клієнтів, щоб створити унікальні витвори персоналізованого автомобільного мистецтва.</p>
+            </div>
+        </div>        
     </section>
 
     <footer>
-        <div class="columns">
-            <div>
-                <p>LA MARQUE</p>
-                <p>Discover Bugatti</p>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="img/logo_BG.png" alt="Bugatti Logo">
             </div>
-            <div>
-                <p>HYPER SPORTS CARS</p>
-                <p>TOURBILLON, BOLIDE...</p>
-            </div>
-            <div>
-                <p>CUSTOMER SERVICE</p>
-            </div>
-            <div>
-                <p>LIFESTYLE</p>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Про Bugatti</h4>
+                    <ul>
+                        <li><a href="https://www.bugatti.com/en/about/careers">Кар‘єра</a></li>
+                        <li><a href="https://www.bugatti.com/en/about/la-maison-pur-sang">La Maison Pur Sang</a></li>
+                        <li><a href="https://www.bugatti.com/en/about/les-patrons">Les Patrons</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Моделі</h4>
+                    <ul>
+                        <li><a href="https://www.bugatti.com/en/models/tourbillon">Tourbillon</a></li>
+                        <li><a href="https://www.bugatti.com/en/models/bolide">Bolide</a></li>
+                        <li><a href="https://www.bugatti.com/en/model-landing/chiron-models">Chiron</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Послуги</h4>
+                    <ul>
+                        <li><a href="https://www.bugatti.com/en/customer-service/roadside-assistance">Допомога на дорозі</a></li>
+                        <li><a href="https://www.bugatti.com/en/customer-service/warranty">Гарантія</a></li>
+                        <li><a href="https://www.bugatti.com/en/about/contact">Контакти</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Соцмережі</h4>
+                    <ul class="social-icons">
+                        <li><a href="https://www.facebook.com/bugatti/?locale=uk_UA"><img src="img/communication.png" alt="Facebook"></a></li>
+                        <li><a href="https://www.instagram.com/bugatti/"><img src="img/instagram.png" alt="Instagram"></a></li>
+                        <li><a href="https://youtube.com/@bugatti?si=6SUWtpWhtEJPz8an"><img src="img/youtube.png" alt="YouTube"></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Bugatti Automobiles S.A.S. Усі права захищено.</p>
+        </div>
     </footer>
-</body>
+    <div class="menu" id="menu">
+        <div class="menu__top">
+          <h1 style="color: black;">BUGATTI</h1>
+            <a href="#Home">
+                <img src="img/Icon-Close.png" alt="Close-menu">
+            </a>
+        </div>
+        <nav class="nav">
+            <a href="#Home" class="nav__link">Home</a>
+            <a href="#Recommended" class="nav__link">Recommended</a>
+            <a href="#Categories" class="nav__link">Categories</a>
+            <a href="#By" class="nav__link">How to buy</a>
+        </nav>
+    </div>
 </html>
