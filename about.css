@@ -1,0 +1,379 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background-color: #111;
+  }
+
+
+/* #region menu */
+/* #region menu */
+.menu__top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 64px;
+}
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  transform: translateX(-100%);
+  transition: transform 0.5s;
+  background: #E5E5E5;
+  box-sizing: border-box;
+  height: 100vh;
+  padding: 64px 120px;
+}
+.menu:target {
+  transform: translateX(-0%);
+}
+/* #endregion */
+
+/* #region nav */
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.nav__link {
+  color: #292929;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 22px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+/* #endregion */
+/* #endregion */
+
+  
+  /* 🔒 Фіксований хедер */
+  .sticky-header {
+  
+    top: 0;
+    left: 0;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 9999;
+    padding: 20px 40px;
+    border-bottom: 1px solid #333;
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .brand, .menu {
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .menu-content {
+    display: none;
+  }
+  
+  /* 🖼 Hero блок */
+  .hero {
+    background-image: url('img/fone\ h0.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 120px 20px 20px;
+  }
+  
+  .hero-content {
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .subheading {
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+  
+  .hero h1 {
+    font-size: 64px;
+    font-weight: bold;
+  }
+  
+  .description {
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  /* 📸 Моделі та секції */
+  .model-section,
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 60px 10%;
+    background-color: #111;
+    border-top: 1px solid #222;
+    gap: 2rem;
+  }
+  
+  .model-section.reverse,
+  .container.reverse {
+    flex-direction: row-reverse;
+  }
+  
+  .text-block {
+    flex: 1 1 50%;
+    max-width: 600px;
+    padding-right: 40px;
+    color: white;
+  }
+  
+  .text-block h1,
+  .text-block h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .text-block p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  .text-block .years {
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 10px;
+  }
+  
+  .image-block {
+    flex: 1 1 40%;
+  }
+  
+  .image-block img,
+  .model-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  /* 📱 Адаптивні стилі */
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 42px;
+    }
+  
+    .description {
+      font-size: 16px;
+    }
+  
+    .model-section,
+    .container {
+      flex-direction: column;
+      padding: 40px 5%;
+    }
+  
+    .text-block {
+      padding-right: 0;
+      margin-bottom: 30px;
+    }
+  
+    .text-block h1,
+    .text-block h2 {
+      font-size: 28px;
+    }
+  
+    .text-block p {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero h1 {
+      font-size: 32px;
+    }
+  
+    .subheading {
+      font-size: 12px;
+    }
+  
+    .description {
+      font-size: 14px;
+    }
+  
+    .model-section,
+    .container {
+      padding: 30px 4%;
+    }
+  
+    .text-block h1,
+    .text-block h2 {
+      font-size: 24px;
+    }
+  
+    .text-block p {
+      font-size: 15px;
+    }
+  }
+  
+  footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px 20px;
+    font-size: 0.9em;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
+    
+}
+
+.footer-logo img {
+    max-width: 160px;
+    width: 50%;
+    margin-bottom: 20px;
+    margin-left: 10%;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    margin-left: 10%;
+    gap: 40px;
+    flex: 1;
+}
+
+.footer-column {
+    min-width: 150px;
+}
+
+.footer-column h4 {
+    margin-bottom: 15px;
+    font-size: 1em;
+    font-weight: 600;
+    color: #fff;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    color: #777;
+    font-size: 0.8em;
+    border-top: 1px solid #222;
+    margin-top: 20px;
+}
+.social-icons {
+    display: flex;
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.social-icons li a img {
+    width: 44px;
+    height: 44px;
+    
+    transition: transform 0.3s ease;
+}
+
+.social-icons li a:hover img {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .footer-column {
+        min-width: 200px;
+    }
+}
+
+/* Адаптивність */
+@media screen and (max-width: 768px) {
+    .hero-image h1 {
+        font-size: 2em;
+        padding: 0 15px;
+    }
+
+    .news-item {
+        height: auto;
+    }
+
+    .news-image {
+        padding: 40px 15px;
+    }
+
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery img {
+        width: 80%;
+    }
+
+    .car-grid {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
